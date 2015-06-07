@@ -25,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onStart() event");
     }
 
@@ -32,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onResume() event");
     }
 
@@ -39,6 +41,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onPause() event");
     }
 
@@ -46,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onStop() event");
     }
 
@@ -53,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Toast.makeText(this, "onDestroyt", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onDestroy() event");
     }
 
@@ -60,6 +65,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        Toast.makeText(this, "onCreateOptionsMenu", Toast.LENGTH_SHORT).show();
         Log.d(msg, "The onCreateOptionsMenu() event");
         return true;
     }
@@ -71,6 +77,7 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        Toast.makeText(this, "onOptionsItemSelected", Toast.LENGTH_SHORT).show();
 
         Log.d(msg, "The onOptionsItemSelected() event");
         //noinspection SimplifiableIfStatement
