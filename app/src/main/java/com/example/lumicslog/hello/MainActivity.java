@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 
 public class MainActivity extends ActionBarActivity {
+    String msg = "Android : ";
 
     /** Called when the activity is first created. */
     @Override
